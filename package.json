@@ -1,6 +1,6 @@
 {
   "name": "@esmaeil-abedi/structure-generator-frontend",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "main": "generator.js",
   "author": {
     "email": "esmaeilabedi1990@gmail.com",
@@ -8,9 +8,7 @@
   },
   "license": "ISC",
   "scripts": {
-    "postinstall": "node src/scripts/configStructureBuilder.js",
-    "build": "babel src --out-dir dist",
-    "start": "node dist/generator.js"
+    "postinstall": "node scripts/configStructureBuilder.js"
   },
   "bin": {
     "generator": "./generator.js"
