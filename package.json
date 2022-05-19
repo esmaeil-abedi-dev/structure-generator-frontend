@@ -1,7 +1,7 @@
 {
   "name": "@esmaeil-abedi/structure-generator-frontend",
-  "version": "1.0.6",
-  "main": "index.js",
+  "version": "1.0.7",
+  "main": "generator.js",
   "author": {
     "email": "esmaeilabedi1990@gmail.com",
     "name": "Esmaeil Abedi"
@@ -9,12 +9,19 @@
   "license": "ISC",
   "scripts": {
     "postinstall": "node src/scripts/configStructureBuilder.js",
-    "start": "node src/index.js"
+    "build": "babel src --out-dir dist",
+    "start": "node dist/generator.js"
   },
   "bin": {
-    "generator": "./bin/index.js"
+    "generator": "./generator.js"
   },
   "dependencies": {
     "inquirer": "^8.2.2"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.17.10",
+    "@babel/core": "^7.17.10",
+    "@babel/preset-env": "^7.17.10",
+    "babel-core": "^6.26.3"
   }
 }
