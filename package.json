@@ -1,6 +1,6 @@
 {
   "name": "@esmaeil-abedi/structure-generator-frontend",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "main": "generator.js",
   "author": {
     "email": "esmaeilabedi1990@gmail.com",
